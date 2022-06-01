@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter
       basename={
         process.env.NODE_ENV === "production"
-          ? "https://juunini.github.io/jeju-web-conference-presentation/react"
+          ? "/jeju-web-conference-presentation/react/"
           : "/"
       }
     >
