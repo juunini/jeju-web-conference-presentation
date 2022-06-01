@@ -13,7 +13,13 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        process.env.NODE_ENV === "production"
+          ? "https://juunini.github.io/jeju-web-conference-presentation/react"
+          : "/"
+      }
+    >
       <Routes>
         <Route path="/box" element={<Box />} />
         <Route path="/avatar" element={<Avatar />} />
