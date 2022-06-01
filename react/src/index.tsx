@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import Box from './Box';
 import Avatar from './Avatar';
+import GitHubGrass from './GitHubGrass';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -16,6 +17,7 @@ root.render(
       <Routes>
         <Route path="/box" element={<Box />} />
         <Route path="/avatar" element={<Avatar />} />
+        <Route path="/grass" element={<GitHubGrass />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
