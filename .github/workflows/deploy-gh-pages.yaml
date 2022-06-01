@@ -19,8 +19,6 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: touch build/.nojekyll
-      - run: cp box.html build/
-      - run: cp avatar.html build/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
