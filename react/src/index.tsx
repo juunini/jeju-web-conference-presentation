@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './index.css';
 import Box from './Box';
+import Avatar from './Avatar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/box" element={<Box />} />
+        <Route path="/avatar" element={<Avatar />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
