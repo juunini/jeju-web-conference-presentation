@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './index.css';
+import App from './App';
 import Box from './Box';
 import Avatar from './Avatar';
 import GitHubGrass from './GitHubGrass';
@@ -13,11 +14,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={
+      process.env.NODE_ENV === 'production'
+        ? '/jeju-web-conference-presentation/'
+        : '/'
+    }>
       <Routes>
         <Route path="/box" element={<Box />} />
         <Route path="/avatar" element={<Avatar />} />
         <Route path="/grass" element={<GitHubGrass />} />
+        <Route path="*" element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
