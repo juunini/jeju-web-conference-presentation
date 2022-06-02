@@ -17,7 +17,7 @@ jobs:
       - name: Install and Build
         uses: actions/setup-node@v2
       - run: yarn
-      - run: yarn deploy
+      - run: yarn build
       - run: touch build/.nojekyll
 
       - name: Deploy
