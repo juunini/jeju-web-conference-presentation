@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Box from './Box';
-import Avatar from './Avatar';
+import Head from './Head';
 import GitHubGrass from './GitHubGrass';
 import reportWebVitals from './reportWebVitals';
 
@@ -17,7 +17,7 @@ root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/box" element={<Box />} />
-        <Route path="/avatar" element={<Avatar />} />
+        <Route path="/head" element={<Head />} />
         <Route path="/grass" element={<GitHubGrass />} />
         <Route path="*" element={<App />} />
       </Routes>

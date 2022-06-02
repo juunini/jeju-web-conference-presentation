@@ -2,7 +2,7 @@ import 'aframe';
 import 'aframe-mirror';
 import { Scene, Box, Plane, Camera } from '@belivvr/aframe-react';
 
-export default function App() {
+export default function Head() {
   return (
     <Scene>
       <Plane
