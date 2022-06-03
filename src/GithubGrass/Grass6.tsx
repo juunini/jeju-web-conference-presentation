@@ -61,9 +61,9 @@ export default function Grass(): JSX.Element {
             return (
               <Box
                 height={height}
-                // y
+                // ↓ y
                 position={{ x: index % WEEK, y: height / 2, z: 0 }}
-                // 
+                // ↑ y
                 color={`rgb(0, ${count}, 0)`}
               />
             )

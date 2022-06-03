@@ -4,14 +4,14 @@ import 'aframe-environment-component';
 import { Scene, Camera, Light, Box, Entity } from '@belivvr/aframe-react';
 
 const WEEK: number = 7;
-// 갯수 많아짐
+// ↓ 갯수 많아짐
 const COMMITS: number[] = [
   6, 1, 3, 20, 5, 3, 7,
   2, 4, 1, 1, 2, 5, 18,
   8, 3, 1, 1, 9, 21, 3,
   1, 1, 15, 5, 49, 44, 68,
 ];
-// 
+// ↑ 갯수 많아짐
 
 export default function Grass(): JSX.Element {
   return (
@@ -62,16 +62,16 @@ export default function Grass(): JSX.Element {
         {
           COMMITS.map((count: number, index: number) => {
             const height: number = count / 10;
-            // 
+            // ↓
             const currentWeek: number = Math.floor(index / WEEK);
-            // 
+            // ↑
 
             return (
               <Box
                 height={height}
-                // z
+                // ↓ z
                 position={{ x: index % WEEK, y: height / 2, z: currentWeek }}
-                // 
+                // ↑ z
                 color={`rgb(0, ${count}, 0)`}
               />
             );

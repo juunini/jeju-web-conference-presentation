@@ -51,11 +51,11 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
-      {/*  */}
+      {/* ↓ */}
       <Entity
         position={{ x: 0, y: 2, z: 0 }}
       >
-      {/*  */}
+      {/* ↑ */}
       {
         COMMITS.map((count: number, index: number) => {
           const height: number = count / 10;

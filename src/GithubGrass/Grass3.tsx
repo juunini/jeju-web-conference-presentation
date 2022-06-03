@@ -46,9 +46,9 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
-      {/*  */}
+      {/* ↓ */}
       <Box color={`rgb(0, 255, 0)`} />
-      {/*  */}
+      {/* ↑ */}
     </Scene>
   );
 }

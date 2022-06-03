@@ -3,7 +3,7 @@ import 'aframe-orbit-controls';
 import 'aframe-environment-component';
 import { Scene, Camera, Light, Box, Entity } from '@belivvr/aframe-react';
 
-// 
+// ↓
 function generateRandomNumber(min: number, max: number) {
   return Math.round(Math.random() * (max - min) + min);
 }
@@ -12,7 +12,7 @@ const WEEK: number = 7;
 const NUMBER_OF_WEEKS: number = 34;
 const COMMITS: number[] = [...new Array(WEEK * NUMBER_OF_WEEKS)]
   .map(() => generateRandomNumber(0, 30));
-// 
+// ↑
 
 export default function Grass(): JSX.Element {
   return (

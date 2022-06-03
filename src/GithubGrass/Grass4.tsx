@@ -3,12 +3,12 @@ import 'aframe-orbit-controls';
 import 'aframe-environment-component';
 import { Scene, Camera, Light, Box } from '@belivvr/aframe-react';
 
-/** */
+/** ↓ */
 const WEEK: number = 7;
 const COMMITS: number[] = [
   6, 1, 3, 20, 5, 3, 7,
 ];
-/** */
+/** ↑ */
 
 export default function Grass(): JSX.Element {
   return (
@@ -53,7 +53,7 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
-      {/*  */}
+      {/* ↓ */}
       {
         COMMITS.map((count: number, index: number) => {
           const height: number = count / 10;
@@ -67,7 +67,7 @@ export default function Grass(): JSX.Element {
           );
         })
       }
-      {/*  */}
+      {/* ↑ */}
     </Scene>
   );
 }

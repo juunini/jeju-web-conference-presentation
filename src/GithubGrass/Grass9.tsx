@@ -55,12 +55,12 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
-      {/* position, rotation */}
+      {/* ↓ position, rotation */}
       <Entity
         position={{ x: -COMMITS.length / WEEK / 2, y: 2, z: WEEK / 2 }}
         rotation={{ x: 0, y: 90, z: 0 }}
       >
-      {/*  */}
+      {/* ↑ position, rotation */}
         {
           COMMITS.map((count: number, index: number) => {
             const height: number = count / 10;

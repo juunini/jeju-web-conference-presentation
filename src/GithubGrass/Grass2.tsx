@@ -34,7 +34,7 @@ export default function Grass(): JSX.Element {
         "
       />
 
-      {/*  */}
+      {/* ↓ */}
       <Light type="ambient" />
       <Light
         type="directional"
@@ -46,7 +46,7 @@ export default function Grass(): JSX.Element {
         position={{ x: 0, y: -0.5, z: 20 }}
         intensity={3}
       />
-      {/*  */}
+      {/* ↑ */}
     </Scene>
   );
 }
