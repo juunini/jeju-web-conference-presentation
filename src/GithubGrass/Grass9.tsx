@@ -61,14 +61,17 @@ export default function Grass(): JSX.Element {
       >
       {/*  */}
         {
-          COMMITS.map((count, index) => (
-            <Box
-              width={1}
-              height={count / 10}
-              position={{ x: index % WEEK, y: count / 20, z: Math.floor(index / WEEK) }}
-              color={`rgb(0, ${count}, 0)`}
-            />
-          ))
+          COMMITS.map((count, index) => {
+            const height = count / 10;
+
+            return (
+              <Box
+                height={count / 10}
+                position={{ x: index % WEEK, y: height / 2, z: Math.floor(index / WEEK) }}
+                color={`rgb(0, ${count}, 0)`}
+              />
+            )
+          })
         }
       </Entity>
     </Scene>

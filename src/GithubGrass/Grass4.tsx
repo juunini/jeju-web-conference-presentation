@@ -55,14 +55,17 @@ export default function Grass(): JSX.Element {
 
       {/*  */}
       {
-        COMMITS.map((count, index) => (
-          <Box
-            width={1}
-            height={count / 10}
-            position={{ x: index % WEEK, y: 0, z: 0 }}
-            color={`rgb(0, ${count}, 0)`}
-          />
-        ))
+        COMMITS.map((count, index) => {
+          const height = count / 10;
+          
+          return (
+            <Box
+              height={height}
+              position={{ x: index % WEEK, y: 0, z: 0 }}
+              color={`rgb(0, ${count}, 0)`}
+            />
+          );
+        })
       }
       {/*  */}
     </Scene>
