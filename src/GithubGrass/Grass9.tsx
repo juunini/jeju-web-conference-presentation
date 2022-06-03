@@ -57,7 +57,7 @@ export default function Grass(): JSX.Element {
 
       {/* ↓ position, rotation */}
       <Entity
-        position={{ x: -COMMITS.length / WEEK / 2, y: 2, z: WEEK / 2 }}
+        position={{ x: -NUMBER_OF_WEEKS / 2, y: 2, z: WEEK / 2 }}
         rotation={{ x: 0, y: 90, z: 0 }}
       >
       {/* ↑ position, rotation */}
