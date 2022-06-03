@@ -53,10 +53,12 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
+      {/* position, rotation */}
       <Entity
         position={{ x: -COMMITS.length / 7 / 2, y: 2, z: 7 / 2 }}
         rotation={{ x: 0, y: 90, z: 0 }}
       >
+      {/*  */}
         {
           COMMITS.map((count, index) => (
             <Box

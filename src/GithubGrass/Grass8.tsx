@@ -3,12 +3,14 @@ import 'aframe-orbit-controls';
 import 'aframe-environment-component';
 import { Scene, Camera, Light, Box, Entity } from '@belivvr/aframe-react';
 
+// 
 function generateRandomNumber(min: number, max: number) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
 const NUMBER_OF_WEEKS: number = 34;
 const COMMITS: number[] = [...new Array(7 * NUMBER_OF_WEEKS)].map(() => generateRandomNumber(0, 30));
+// 
 
 export default function Grass(): JSX.Element {
   return (
@@ -54,8 +56,7 @@ export default function Grass(): JSX.Element {
       />
 
       <Entity
-        position={{ x: -COMMITS.length / 7 / 2, y: 2, z: 7 / 2 }}
-        rotation={{ x: 0, y: 90, z: 0 }}
+        position={{ x: 0, y: 2, z: 0 }}
       >
         {
           COMMITS.map((count, index) => (
