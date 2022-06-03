@@ -10,7 +10,8 @@ function generateRandomNumber(min: number, max: number) {
 
 const WEEK: number = 7;
 const NUMBER_OF_WEEKS: number = 34;
-const COMMITS: number[] = [...new Array(WEEK * NUMBER_OF_WEEKS)].map(() => generateRandomNumber(0, 30));
+const COMMITS: number[] = [...new Array(WEEK * NUMBER_OF_WEEKS)]
+  .map(() => generateRandomNumber(0, 30));
 // 
 
 export default function Grass(): JSX.Element {
@@ -60,9 +61,9 @@ export default function Grass(): JSX.Element {
         position={{ x: 0, y: 2, z: 0 }}
       >
         {
-          COMMITS.map((count, index) => {
-            const height = count / 10;
-            const currentWeek = Math.floor(index / WEEK);
+          COMMITS.map((count: number, index: number) => {
+            const height: number = count / 10;
+            const currentWeek: number = Math.floor(index / WEEK);
 
             return (
               <Box

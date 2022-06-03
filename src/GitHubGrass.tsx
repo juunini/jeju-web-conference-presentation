@@ -61,9 +61,9 @@ export default function Grass(): JSX.Element {
       >
       {/*  */}
         {
-          COMMITS.map((count, index) => {
-            const height = count / 10;
-            const currentWeek = Math.floor(index / WEEK);
+          COMMITS.map((count: number, index: number) => {
+            const height: number = count / 10;
+            const currentWeek: number = Math.floor(index / WEEK);
 
             return (
               <Box

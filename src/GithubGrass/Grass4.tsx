@@ -55,9 +55,9 @@ export default function Grass(): JSX.Element {
 
       {/*  */}
       {
-        COMMITS.map((count, index) => {
-          const height = count / 10;
-          
+        COMMITS.map((count: number, index: number) => {
+          const height: number = count / 10;
+
           return (
             <Box
               height={height}
