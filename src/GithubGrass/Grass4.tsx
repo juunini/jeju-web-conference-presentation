@@ -4,6 +4,7 @@ import 'aframe-environment-component';
 import { Scene, Camera, Light, Box } from '@belivvr/aframe-react';
 
 /** */
+const WEEK: number = 7;
 const COMMITS: number[] = [
   6, 1, 3, 20, 5, 3, 7,
 ];
@@ -58,7 +59,7 @@ export default function Grass(): JSX.Element {
           <Box
             width={1}
             height={count / 10}
-            position={{ x: index % 7, y: 0, z: 0 }}
+            position={{ x: index % WEEK, y: 0, z: 0 }}
             color={`rgb(0, ${count}, 0)`}
           />
         ))
