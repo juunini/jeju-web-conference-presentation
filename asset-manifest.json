@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/jeju-web-conference-presentation/static/css/main.3f853dfd.css",
-    "main.js": "/jeju-web-conference-presentation/static/js/main.d906b183.js",
+    "main.js": "/jeju-web-conference-presentation/static/js/main.89bc7635.js",
     "static/js/787.c97e9d59.chunk.js": "/jeju-web-conference-presentation/static/js/787.c97e9d59.chunk.js",
     "index.html": "/jeju-web-conference-presentation/index.html",
     "main.3f853dfd.css.map": "/jeju-web-conference-presentation/static/css/main.3f853dfd.css.map",
-    "main.d906b183.js.map": "/jeju-web-conference-presentation/static/js/main.d906b183.js.map",
+    "main.89bc7635.js.map": "/jeju-web-conference-presentation/static/js/main.89bc7635.js.map",
     "787.c97e9d59.chunk.js.map": "/jeju-web-conference-presentation/static/js/787.c97e9d59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3f853dfd.css",
-    "static/js/main.d906b183.js"
+    "static/js/main.89bc7635.js"
   ]
 }
