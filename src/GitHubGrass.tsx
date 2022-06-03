@@ -89,12 +89,12 @@ function App() {
         }
       </Entity>
 
+      <Light type="ambient" />
       <Light
         type="directional"
         position={{ x: 0, y: -0.5, z: -20 }}
         intensity={2}
       />
-
       <Light
         type="directional"
         position={{ x: 0, y: -0.5, z: 20 }}
