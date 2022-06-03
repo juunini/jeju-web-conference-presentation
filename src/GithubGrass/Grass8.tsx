@@ -62,10 +62,12 @@ export default function Grass(): JSX.Element {
         {
           COMMITS.map((count, index) => {
             const height = count / 10;
+            const currentWeek = Math.floor(index / WEEK);
+
             return (
               <Box
                 height={height}
-                position={{ x: index % WEEK, y: height / 2, z: Math.floor(index / WEEK) }}
+                position={{ x: index % WEEK, y: height / 2, z: currentWeek }}
                 color={`rgb(0, ${count}, 0)`}
               />
             )

@@ -7,8 +7,9 @@ function generateRandomNumber(min: number, max: number) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
+const WEEK: number = 7;
 const NUMBER_OF_WEEKS: number = 34;
-const COMMITS: number[] = [...new Array(7 * NUMBER_OF_WEEKS)].map(() => generateRandomNumber(0, 30));
+const COMMITS: number[] = [...new Array(WEEK * NUMBER_OF_WEEKS)].map(() => generateRandomNumber(0, 30));
 
 export default function Grass(): JSX.Element {
   return (
@@ -53,19 +54,25 @@ export default function Grass(): JSX.Element {
         intensity={3}
       />
 
+      {/* position, rotation */}
       <Entity
-        position={{ x: -COMMITS.length / 7 / 2, y: 2, z: 7 / 2 }}
+        position={{ x: -COMMITS.length / WEEK / 2, y: 2, z: WEEK / 2 }}
         rotation={{ x: 0, y: 90, z: 0 }}
       >
+      {/*  */}
         {
-          COMMITS.map((count, index) => (
-            <Box
-              width={1}
-              height={count / 10}
-              position={{ x: index % 7, y: count / 20, z: Math.floor(index / 7) }}
-              color={`rgb(0, ${count}, 0)`}
-            />
-          ))
+          COMMITS.map((count, index) => {
+            const height = count / 10;
+            const currentWeek = Math.floor(index / WEEK);
+
+            return (
+              <Box
+                height={height}
+                position={{ x: index % WEEK, y: height / 2, z: currentWeek }}
+                color={`rgb(0, ${count}, 0)`}
+              />
+            )
+          })
         }
       </Entity>
     </Scene>
